@@ -1,0 +1,86 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centralizar a calculadora na tela */
+body {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.calculator {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tela de exibição */
+.display {
+  
+  background-color: #111;
+  color: #0f0;
+  height: 100px;
+  font-size: 2rem;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: right;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #000;
+}
+
+/* Grade dos botões */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+}
+
+/* Estilo dos botões */
+button {
+  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button:active {
+  background-color: #555;
+}
+
+/* Botões de operações com destaque */
+button:nth-child(11),
+button:nth-child(12),
+button:nth-child(13),
+button:nth-child(14) {
+  background-color: #ff9500;
+}
+
+button:nth-child(11):hover,
+button:nth-child(12):hover,
+button:nth-child(13):hover,
+button:nth-child(14):hover {
+  background-color: #e08600;
+}
